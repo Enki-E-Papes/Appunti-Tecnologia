@@ -44,3 +44,21 @@ Le variabili var sono inizializzate automaticamente con undefined, mentre le var
 - le variabili **var** possono essere utilizzate prima della loro dichiarazione (hoisting).
 
 Bisogna quindi fare attenzione a dichiarare nella maniera corretta le variabili; in particolare la dichiarazione di variabili globali con il **var** potrebbe portare a ridichiarare variabili involontariamente (soprattutto nel caso in cui vengono inclusi più script in una pagina). Per la dichiarazione di variabili globali è quindi preferibile l’utilizzo del **let**.
+
+# Alert, Prompt e Confirm
+alert, prompt e confirm sono tre metodi dell’oggetto window e servono a gestire le finestre di dialogo in JS.
+
+- alert serve a mostrare un messaggio da parte della pagina web
+- prompt permette di chiedere all’utente di inserire un valore (restituisce il valore inserito dall’utente opure null)
+- confirm serve a chiedere all’utente di effettuare una scelta (restituisce un valore booleano)
+
+
+# Console
+L’oggetto console è una proprietà dell’oggetto window e serve a gestire la console di debug del browser. La console di debug è il posto più indicato dove andare a scrivere eventuali messaggi di debug.
+Ricapitoliamo di seguito i principali metodi dell’oggetto console:
+
+- log: scrive un messaggio (generico); riceve come parametro il messaggio
+- debug: più specifico del precedente in quanto inserisce anche il numero della riga di codice
+- error, warn, info: scrivono rispettivamente dei messaggi di errore (sfondo rosso), di avvertimento (sfondo giallo) o informativi (sfondo blu)
+- time, timeEnd: servono a misurare i tempi di esecuzione per verificare l’efficienza del proprio codice; va passata la stessa console ai due timer
+- clear: cancella la console
